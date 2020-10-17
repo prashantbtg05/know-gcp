@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Google CLoud</title>
+    </head>
+    <body>
+        <h1>DATA ENGINEERING - GOOGLE CLOUD</h1>
+        <div>
+            <ul>
+                <li> <a href="#dataproc">DATAPROC </a></li>
+                <li> <a href="#big-query">DATAFLOW </a></li>
+                <li> </a>BIG QUERY 
+                    <ul> 
+                        <li><a href="#big-query">BIGQUERY STORAGE</a></li>
+                        <li><a href="#big-query-sql">BIGQUERY SQL </a> </li>
+
+                        <li>BIG DQUERY ML</li>
+                    </ul>
+                </li>
+                <li><a href="#cloud-pubsub">CLOUD PUB-SUB</a></li>
+                <li><a href="#big-table">BIG TABLE</li>
+                <li><a href="#cloud-storage">CLOUD STORAGE</a></li>
+                <li><a href="#cloud-spanner">CLOUD SPANNER </a></li>
+                <li><a href="#cloud-sql">CLOUD SQL</a></li>
+                <li><a href="#cloud-function"> CLOUD FUNCTIONS</a></li>
+            </ul>
+        </div>
+
+        <div id="dataproc">
+            <ul>
+                <li>Dataproc clusters are job specific</li>
+                <li>single-use cluster is called an ephemeral cluster.</li>
+                <li><a href="https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/init-actions">Initialization actions</a> are executed on each node during cluster creation. They are also executed on each newly added node when scaling or autoscaling clusters up</li>
+                <li><a href="https://cloud.google.com/solutions/migration/hadoop/hadoop-gcp-migration-jobs">Hadoop to Dataproc Migraation</a></li>
+            </ul>
+        </div>
+
+        <div id="dataflow">
+            <ul>
+                <li><a href="https://beam.apache.org/documentation/programming-guide/#windowing">Windowing</a></li>
+                <li>Dataflow does not support Spark.</li>
+            </ul>
+        </div>
+        <div id="big-query">
+            <ul>
+                <li><a href="">Loading data</a> into bigquery . Supported file formats types: 
+                    <ul>
+                        <li>CSV, JSON (newline delimited), AVRO, PARQUET, ORC</li>
+                        <li>BigQuery supports UTF-8 encoding for both nested or repeated and flat data. BigQuery supports ISO-8859-1 encoding for flat data only for CSV files</li>
+                        <li> <i>bq insert</i> will not set the partitioning and clustering and only supports JSON.</li>
+                        <li><i>bq cp</i> is for existing BigQuery tables only.</li>
+                    </ul>
+                </li>
+                <li><a href="https://cloud.google.com/blog/products/gcp/inside-capacitor-bigquerys-next-generation-columnar-storage-format">CAPACITOR</a> - Big Query Columnar format</li>
+            </ul>
+        </div>
+        <div id="big-query-sql">
+            <ul>
+                <li><a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/analytic-function-concepts">  Analytic functions</a>
+                    <ul>
+                        <li><a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/numbering_functions">Numbering Functions</a></li>
+                        <li><a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/navigation_functions">Navigation Functionas</a></li>
+                    </ul>
+                </li>
+                   
+            </ul>
+        </div>
+
+        <div id="cloud-pubsub">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+
+
+        <div id="big-table">
+            <ul>
+                <li>Bigtable can store and analyze time series data</li>
+                <li>BigTable cannot limit access to specific tables</li>
+            </ul>
+        </div>
+
+        <div id="cloud-storage">
+            <ul>
+                <li>Cloud Storage does not support SQL</li>
+            </ul>
+        </div>
+
+        <div  id="cloud-spanner">
+            <ul>
+                <li>globally scalable transactions</li>
+            </ul>
+        </div>
+
+        <div  id="cloud-sql">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+
+        <div id="cloud-function">
+            <ul>
+                <li> Google Cloud Functions is a serverless execution environment for building and connecting cloud services. Your function is triggered when an event being watched is fired. Your code executes in a fully managed environment. Events might be things like changes to data in a database, files added to a storage system, or a new virtual machine instance being created. <a href="https://cloud.google.com/functions/docs/concepts/overview">More</a></li>
+            </ul>
+        </div>
+
+    </body>
+</html>
+
